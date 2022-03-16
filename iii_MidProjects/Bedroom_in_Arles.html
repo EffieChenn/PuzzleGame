@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUZZLE</title>
+    <script src="./_js/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        #score{
+            width: 200px;
+            margin: auto;
+            margin-top: 20px;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow:0px 0px 30px white;
+            background-color: burlywood;
+            text-align: center;
+            font-family: Arial;
+            font-weight: bold;
+            font-size: 20px;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="fin">PUZZLE GAME</h1>
+    <div id="gridArea">
+        <div class="boxs" id="n11" onclick="move('n11')">11</div>
+        <div class="boxs" id="n12" onclick="move('n12')" value="12">12</div>
+        <div class="boxs" id="n13" onclick="move('n13')">13</div>
+        <div class="boxs" id="n21" onclick="move('n21')">21</div>
+        <div class="boxs" id="n22" onclick="move('n22')">22</div>
+        <div class="boxs" id="n23" onclick="move('n23')">23</div>
+        <div class="boxs" id="n31" onclick="move('n31')">31</div>
+        <div class="boxs" id="n32" onclick="move('n32')">32</div>
+        <div class="boxs" id="n33" onclick="move('n33')">33</div>
+    </div>
+    <div id="moves">移動次數：0</div>
+    <div id="start" onclick="start()">Start Game</div>
+    
+    <div id="score" onclick="to()" style="visibility: hidden;">登記成績排行</div>
+    <div id="info" onclick="toInfo()" >查看名畫介紹</div>
+    
+    
+    <script src="./_js/PuzzleGame.js"></script>
+</body>
+</html>

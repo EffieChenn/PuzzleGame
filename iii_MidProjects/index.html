@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUZZLE ART GALLERY</title>
+    <style>
+        body{
+            background-color:#fff1e6;
+        }
+
+        .playArea{
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, 0);
+            padding: 30px;
+            background-color: #eddcd2;
+            text-align: center;
+            color: #cb997e;
+        }
+
+        #start{
+            padding: 10px;
+            font-size: 25px;
+            font-weight: bold;
+            border-radius: 5px;
+            box-shadow: darkgray;
+
+        }
+        #fin{
+            text-align: center;
+            font-weight: bold;
+            font-family: Arial;
+            font-size: 40px;
+            color:peru;
+            text-shadow:5px 5px rgb(255, 255, 252);
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <h1 id="fin">PUZZLE ART GALLERY</h1>
+    <!-- 放拼圖的地方 -->
+    <div class="playArea">
+        <h1>玩法說明:
+        </h1>
+        <hr>
+        <h3>請按Start Game開始遊戲</h3>
+        <h3>點選空格附近的拼圖，會移動至原本的空格位置</h3>
+        <h3>拼圖完成後，會顯示按鈕，點選後即可查看該名畫作品的相關資訊</h3>
+        <h3>快來一起拼拼圖，認識世界名畫吧！</h3>
+        <hr>
+        <button id=start onclick="start()">GO!</button>
+        
+
+    </div>
+
+
+
+    <script type="text/javascript">
+
+        // 跳轉到第一關
+        function start(){
+            self.location='Bedroom_in_Arles.html';
+        }
+    </script> 
+
+</body>
+</html>
