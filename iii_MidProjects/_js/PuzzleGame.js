@@ -1,5 +1,8 @@
 var moveCount = 0;
 
+//for testing github fork
+console.log(moveCount);
+
 function to(){
     var getVal = moveCount;             //傳移動次數給下個頁面排名
     document.location.href="signForRank.html?moves="+getVal;
